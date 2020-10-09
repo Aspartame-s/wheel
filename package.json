@@ -1,29 +1,36 @@
 {
-  "name": "wheel-demo",
-  "version": "0.0.1",
-  "description": "一个vue组件",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Aspartame-s/wheel.git"
-  },
-  "keywords": [
-    "vue",
-    "ui"
-  ],
-  "author": "Aspartame-s",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/Aspartame-s/wheel/issues"
-  },
-  "homepage": "https://github.com/Aspartame-s/wheel#readme",
-  "dependencies": {
-    "vue": "^2.6.12"
-  },
-  "devDependencies": {
-    "parcel-bundler": "^1.12.4"
-  }
+    "name": "wheel-demo",
+    "version": "0.0.1",
+    "description": "一个vue组件",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Aspartame-s/wheel.git"
+    },
+    "keywords": [
+        "vue",
+        "ui"
+    ],
+    "author": "Aspartame-s",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/Aspartame-s/wheel/issues"
+    },
+    "homepage": "https://github.com/Aspartame-s/wheel#readme",
+    "dependencies": {
+        "vue": "^2.6.12",
+        "vue-hot-reload-api": "^2.3.4"
+    },
+    "devDependencies": {
+        "@vue/component-compiler-utils": "^3.2.0",
+        "parcel-bundler": "^1.12.4",
+        "sass": "^1.27.0",
+        "vue-template-compiler": "^2.6.12"
+    },
+    "alias": {
+        "vue": "./node_modules/vue/dist/vue.common.js"
+    }
 }
