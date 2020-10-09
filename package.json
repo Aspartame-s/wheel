@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/Aspartame-s/wheel/issues"
   },
-  "homepage": "https://github.com/Aspartame-s/wheel#readme"
+  "homepage": "https://github.com/Aspartame-s/wheel#readme",
+  "dependencies": {
+    "vue": "^2.6.12"
+  }
 }
