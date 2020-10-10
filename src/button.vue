@@ -1,9 +1,24 @@
 <template>
-     <button class="g-button">hello world</button>
+     <button class="g-button" :class="{[`icon-${iconPosition}`]: true}">
+         <svg v-if="icon" class="icon" aria-hidden="true" >
+            <use :xlink:href="`#i-${icon}`"></use>
+        </svg>
+       <div class="content">
+            <slot></slot>
+       </div>
+    </button>
 </template>
 
 <script>
-    export default {}
+    export default {
+        props:{
+            icon:{},
+            iconPosition:{
+                type:String,
+                default:'left'
+            }
+        }
+    }
 </script>
 
 <style lang="scss">
@@ -15,6 +30,11 @@
             color: var(--color);
             border: 1px solid var(--border-color);
             background: var(--button-bg);
+            display:inline-flex;
+            justify-content: center;
+            align-items: center;
+            vertical-align: middle;
+            padding: 0 1em;
         &:hover {
             border-color: var(--border-hover-color);
         }
@@ -25,6 +45,13 @@
         
         &:focus {
             outline: none;
+        }
+
+        > .content {order: 2}
+        > .icon {order: 1; margin-right: .1em;}
+        &.icon-right {
+            > .content {order: 1}
+            > .icon {order: 2; margin-right: 0; margin-left: .1em;} 
         }   
     }     
 </style>
