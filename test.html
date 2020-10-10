@@ -35,10 +35,9 @@
 
 <body>
     <div id="app">
-        <g-button icon="setting" icon-position="left">按钮</g-button>
-        <g-button>按钮</g-button>
-        <g-button icon="setting" icon-position="right">按钮</g-button>
-        <g-icon name="download"></g-icon>
+        <g-button icon="setting" :loading="loading2" icon-position="left" @click='loading2 = !loading2'>按钮</g-button>
+        <g-button :loading="loading1" @click='loading1 = !loading1'>按钮</g-button>
+        <g-button icon="setting" icon-position="right" :loading="loading3" @click='loading3 = !loading3'>按钮</g-button>
     </div>
     <script src="./src/app.js"></script>
     <script src="//at.alicdn.com/t/font_2120401_fogrpgpfo8a.js"></script>
