@@ -34,7 +34,7 @@
             font-size: var(--font-size);
             height: var( --button-height);
             padding: 0 1em;
-            border-radius: var(--button-radius);
+            border-radius: var(--border-radius);
             color: var(--color);
             border: 1px solid var(--border-color);
             background: var(--button-bg);
