@@ -6,7 +6,15 @@
 
 <script>
 export default {
-    
+    mounted () {
+        for(let node of this.$el.children) {
+            let name = node.nodeName.toLowerCase()
+            // console.log(node.nodeName);
+            if(name !== 'button') {
+                console.warn(`button-group 的子元素应该全是 g-button, 但你写的是${name}`);
+            }
+        }
+    }
 }
 </script>
 
