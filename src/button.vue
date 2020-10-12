@@ -1,5 +1,5 @@
 <template>
-     <button class="g-button" :class="{[`icon-${iconPosition}`]: true}" @click="$emit('click')">
+     <button class="g-button" :class="{[`icon-${iconPosition}`]: true}" @click="$emit('clikc')">
         
         <g-icon class="icon" v-if="icon && !loading" :name="icon"></g-icon>
         <g-icon class="loading" v-if="loading" name="loading"></g-icon>
@@ -10,7 +10,11 @@
 </template>
 
 <script>
+import Icon from './icon.vue'
     export default {
+        components:{
+            'g-icon': Icon
+        },
         props:{
             icon:{},
             loading:{
