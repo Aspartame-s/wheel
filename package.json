@@ -4,6 +4,7 @@
     "description": "一个vue组件",
     "main": "dist/index.js",
     "scripts": {
+        "start": "parcel test.html",
         "dev-test": "parcel watch test/* --no-cache & karma start",
         "test": "parcel build test/* --no-minify && karma start --single-run"
     },
