@@ -43,7 +43,7 @@ export default {
     .col {
         // height: 100px;
         // background: grey;
-        width: 50%;
+        // width: 50%;
         // border: 1px solid red;
         // padding: 0 10px;
         $class-prefix: col-;
