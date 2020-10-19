@@ -36,6 +36,10 @@ export default {
         }
         >.action-wrapper {
             margin-left: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding:0 1em;
         }
     }
 </style>

@@ -31,6 +31,10 @@ export default {
         }
     },
     mounted() {
+        if (this.$children.length == 0) {
+            console && console.warn &&
+            console.warn('tabs里应该是子组件tabs-head和tabs-body')
+        }
         this.$children.forEach((vm) => {
             if(vm.$options.name === 'GuluTabsHead') {
                 vm.$children.forEach((item) => {
