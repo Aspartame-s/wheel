@@ -57,7 +57,8 @@ export default {
         align-items: center;
         display: flex;
         &.active {
-            background: red;
+            color: blue;
+            font-weight: bold;
         }
     }
 </style>
