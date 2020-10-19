@@ -39,7 +39,7 @@ export default {
     $border-color-hover: #666;
     $border-radius: 4px;
     $font-size: 14px;
-    $box-shadow-color: rgb(0, 0, 0, 0.5);
+    $box-shadow-color: rgba(0, 0, 0, 0.5);
     .wrapper {
         display: inline-block;
         font-size: $font-size;
