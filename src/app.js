@@ -32,7 +32,8 @@ new Vue({
         loading1: false,
         loading2: false,
         loading3: false,
-        selectedTab: 'sports'
+        selectedTab: 'sports',
+        message: 0
     },
     methods: {
         inputChange(e) {
